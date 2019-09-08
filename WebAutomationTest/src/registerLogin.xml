@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LoginRegistrationSuite" parallel="tests" thread-count="2" verbose="2">
+  <test name="LoginTest">
+  	<parameter name="browser" value="Chrome">											<!-- for cross-browser testing Firefox/Chrome -->
+	    <classes>
+	      <class name="login.LoginTest"/>
+	    </classes>
+    </parameter>
+  </test> <!-- Test -->
+  <test name="RegistrationTest">
+    <parameter name="browser" value="Chrome">											<!-- for cross-browser testing Firefox/Chrome -->
+	    <classes>
+	      <class name="registration.RegisterTest"/>
+	    </classes>
+    </parameter>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

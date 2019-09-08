@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-LoginRegistrationSuite">
+              <span class="suite-name border-passed">LoginRegistrationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-LoginRegistrationSuite">
+                    <span>C:\Users\mt\eclipse-workspace\WebAutomationTest\src\registerLogin.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-LoginRegistrationSuite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-LoginRegistrationSuite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-LoginRegistrationSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-LoginRegistrationSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-LoginRegistrationSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-LoginRegistrationSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-LoginRegistrationSuite" class="hide-methods passed suite-LoginRegistrationSuite"> (hide)</a> <!-- hide-methods passed suite-LoginRegistrationSuite -->
+                      <a href="#" panel-name="suite-LoginRegistrationSuite" class="show-methods passed suite-LoginRegistrationSuite"> (show)</a> <!-- show-methods passed suite-LoginRegistrationSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-LoginRegistrationSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="adminDeleteAcct(test@email.com, testUser, test123)">adminDeleteAcct(test@email.com, testUser, test123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="adminEditAcct(tmail@email.com, 123, tran)">adminEditAcct(tmail@email.com, 123, tran)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="login.LoginTest" hash-for-method="guestLogin">guestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="login.LoginTest" hash-for-method="login(invalidUsername, 123)">login(invalidUsername, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="login.LoginTest" hash-for-method="login(admin@marvel.com, 123)">login(admin@marvel.com, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="login.LoginTest" hash-for-method="login(newguy@gmail.com, 123)">login(newguy@gmail.com, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(first, last, gmail@email.com, username, pwd, pwd1)">register(first, last, gmail@email.com, username, pwd, pwd1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(first, last, tmail@email.com, tran, 123, 123)">register(first, last, tmail@email.com, tran, 123, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(first, last, gmail@email.com, admin, pwd, pwd)">register(first, last, gmail@email.com, admin, pwd, pwd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(first, last, gmail@email.com, username, pwd, )">register(first, last, gmail@email.com, username, pwd, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(first, last, thanos@marvel.com, username, pwd, pwd)">register(first, last, thanos@marvel.com, username, pwd, pwd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(first, last, email, username, pwd, pwd)">register(first, last, email, username, pwd, pwd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(@@, last, gmail@email.com, username, pwd, pwd)">register(@@, last, gmail@email.com, username, pwd, pwd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="register(first, @@, gmail@email.com, username, pwd, pwd)">register(first, @@, gmail@email.com, username, pwd, pwd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginRegistrationSuite" title="registration.RegisterTest" hash-for-method="userEditAcct(tmail@email.com, 123, tran)">userEditAcct(tmail@email.com, 123, tran)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-LoginRegistrationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-LoginRegistrationSuite" class="panel LoginRegistrationSuite">
+          <div class="suite-LoginRegistrationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">registration.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminDeleteAcct(test@email.com, testUser, test123)">
+                  </a> <!-- adminDeleteAcct(test@email.com, testUser, test123) -->
+                  <span class="method-name">adminDeleteAcct</span>
+                  <span class="parameters">(test@email.com, testUser, test123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminEditAcct(tmail@email.com, 123, tran)">
+                  </a> <!-- adminEditAcct(tmail@email.com, 123, tran) -->
+                  <span class="method-name">adminEditAcct</span>
+                  <span class="parameters">(tmail@email.com, 123, tran)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(first, last, gmail@email.com, username, pwd, pwd1)">
+                  </a> <!-- register(first, last, gmail@email.com, username, pwd, pwd1) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(first, last, gmail@email.com, username, pwd, pwd1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(first, last, tmail@email.com, tran, 123, 123)">
+                  </a> <!-- register(first, last, tmail@email.com, tran, 123, 123) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(first, last, tmail@email.com, tran, 123, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(first, last, gmail@email.com, admin, pwd, pwd)">
+                  </a> <!-- register(first, last, gmail@email.com, admin, pwd, pwd) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(first, last, gmail@email.com, admin, pwd, pwd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(first, last, gmail@email.com, username, pwd, )">
+                  </a> <!-- register(first, last, gmail@email.com, username, pwd, ) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(first, last, gmail@email.com, username, pwd, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(first, last, thanos@marvel.com, username, pwd, pwd)">
+                  </a> <!-- register(first, last, thanos@marvel.com, username, pwd, pwd) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(first, last, thanos@marvel.com, username, pwd, pwd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(first, last, email, username, pwd, pwd)">
+                  </a> <!-- register(first, last, email, username, pwd, pwd) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(first, last, email, username, pwd, pwd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(@@, last, gmail@email.com, username, pwd, pwd)">
+                  </a> <!-- register(@@, last, gmail@email.com, username, pwd, pwd) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(@@, last, gmail@email.com, username, pwd, pwd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register(first, @@, gmail@email.com, username, pwd, pwd)">
+                  </a> <!-- register(first, @@, gmail@email.com, username, pwd, pwd) -->
+                  <span class="method-name">register</span>
+                  <span class="parameters">(first, @@, gmail@email.com, username, pwd, pwd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userEditAcct(tmail@email.com, 123, tran)">
+                  </a> <!-- userEditAcct(tmail@email.com, 123, tran) -->
+                  <span class="method-name">userEditAcct</span>
+                  <span class="parameters">(tmail@email.com, 123, tran)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginRegistrationSuite-class-passed -->
+          <div class="suite-LoginRegistrationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">login.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="guestLogin">
+                  </a> <!-- guestLogin -->
+                  <span class="method-name">guestLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(invalidUsername, 123)">
+                  </a> <!-- login(invalidUsername, 123) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(invalidUsername, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin@marvel.com, 123)">
+                  </a> <!-- login(admin@marvel.com, 123) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin@marvel.com, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(newguy@gmail.com, 123)">
+                  </a> <!-- login(newguy@gmail.com, 123) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(newguy@gmail.com, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginRegistrationSuite-class-passed -->
+        </div> <!-- panel LoginRegistrationSuite -->
+        <div panel-name="test-xml-LoginRegistrationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\mt\eclipse-workspace\WebAutomationTest\src\registerLogin.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot; name=&quot;LoginRegistrationSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;2&quot; name=&quot;LoginTest&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;login.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;2&quot; name=&quot;RegistrationTest&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;registration.RegisterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegistrationTest --&gt;
+&lt;/suite&gt; &lt;!-- LoginRegistrationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-LoginRegistrationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for LoginRegistrationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RegistrationTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-LoginRegistrationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for LoginRegistrationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">function</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">adminDeleteAcct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">adminEditAcct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">userEditAcct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">register</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">register</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-LoginRegistrationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for LoginRegistrationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_LoginRegistrationSuite');
+function tableData_LoginRegistrationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'adminDeleteAcct')
+data.setCell(0, 2, 'registration.RegisterTest')
+data.setCell(0, 3, 7765);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'login.LoginTest')
+data.setCell(1, 3, 5794);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'login.LoginTest')
+data.setCell(2, 3, 5106);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'adminEditAcct')
+data.setCell(3, 2, 'registration.RegisterTest')
+data.setCell(3, 3, 4900);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'register')
+data.setCell(4, 2, 'registration.RegisterTest')
+data.setCell(4, 3, 4557);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'userEditAcct')
+data.setCell(5, 2, 'registration.RegisterTest')
+data.setCell(5, 3, 4212);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'register')
+data.setCell(6, 2, 'registration.RegisterTest')
+data.setCell(6, 3, 4079);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'register')
+data.setCell(7, 2, 'registration.RegisterTest')
+data.setCell(7, 3, 4053);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'register')
+data.setCell(8, 2, 'registration.RegisterTest')
+data.setCell(8, 3, 4047);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'register')
+data.setCell(9, 2, 'registration.RegisterTest')
+data.setCell(9, 3, 3977);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'register')
+data.setCell(10, 2, 'registration.RegisterTest')
+data.setCell(10, 3, 3955);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'register')
+data.setCell(11, 2, 'registration.RegisterTest')
+data.setCell(11, 3, 3934);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'register')
+data.setCell(12, 2, 'registration.RegisterTest')
+data.setCell(12, 3, 3934);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'guestLogin')
+data.setCell(13, 2, 'login.LoginTest')
+data.setCell(13, 3, 2734);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'login')
+data.setCell(14, 2, 'login.LoginTest')
+data.setCell(14, 3, 978);
+window.suiteTableData['LoginRegistrationSuite']= { tableData: data, tableDiv: 'times-div-LoginRegistrationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-LoginRegistrationSuite">
+              </div> <!-- times-div-LoginRegistrationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-LoginRegistrationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for LoginRegistrationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-LoginRegistrationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">login.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">search</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-LoginRegistrationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">registration.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(Chrome)</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">login(invalidUsername, 123)</span>
+                <span class="method-start">14537 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">registration.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">register(first, last, gmail@email.com, username, pwd, )</span>
+                <span class="method-start">14566 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login(admin@marvel.com, 123)</span>
+                <span class="method-start">15517 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">registration.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">register(first, last, email, username, pwd, pwd)</span>
+                <span class="method-start">19124 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login(newguy@gmail.com, 123)</span>
+                <span class="method-start">21312 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">registration.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">register(first, last, gmail@email.com, username, pwd, pwd1)</span>
+                <span class="method-start">23178 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">guestLogin</span>
+                <span class="method-start">26421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">registration.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">register(@@, last, gmail@email.com, username, pwd, pwd)</span>
+                <span class="method-start">27258 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">29156 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">registration.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">register(first, @@, gmail@email.com, username, pwd, pwd)</span>
+                <span class="method-start">31193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">register(first, last, thanos@marvel.com, username, pwd, pwd)</span>
+                <span class="method-start">35128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">register(first, last, gmail@email.com, admin, pwd, pwd)</span>
+                <span class="method-start">39084 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">register(first, last, tmail@email.com, tran, 123, 123)</span>
+                <span class="method-start">43132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userEditAcct(tmail@email.com, 123, tran)</span>
+                <span class="method-start">47112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminEditAcct(tmail@email.com, 123, tran)</span>
+                <span class="method-start">51331 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminDeleteAcct(test@email.com, testUser, test123)</span>
+                <span class="method-start">56233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">63998 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

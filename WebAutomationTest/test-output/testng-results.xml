@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="16" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LoginRegistrationSuite" duration-ms="64074" started-at="2019-09-08T04:18:23Z" finished-at="2019-09-08T04:19:27Z">
+    <groups>
+      <group name="function">
+        <method signature="RegisterTest.adminDeleteAcct(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:registration.RegisterTest@2173f6d9]" name="adminDeleteAcct" class="registration.RegisterTest"/>
+        <method signature="RegisterTest.adminEditAcct(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:registration.RegisterTest@2173f6d9]" name="adminEditAcct" class="registration.RegisterTest"/>
+        <method signature="RegisterTest.userEditAcct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:registration.RegisterTest@2173f6d9]" name="userEditAcct" class="registration.RegisterTest"/>
+      </group> <!-- function -->
+      <group name="login">
+        <method signature="LoginTest.login(java.lang.String, java.lang.String)[pri:0, instance:login.LoginTest@59e5ddf]" name="login" class="login.LoginTest"/>
+      </group> <!-- login -->
+      <group name="register">
+        <method signature="RegisterTest.register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" class="registration.RegisterTest"/>
+      </group> <!-- register -->
+    </groups>
+    <test name="LoginTest" duration-ms="29358" started-at="2019-09-08T04:18:23Z" finished-at="2019-09-08T04:18:52Z">
+      <class name="login.LoginTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:login.LoginTest@59e5ddf]" name="beforeTest" is-config="true" duration-ms="14505" started-at="2019-09-08T04:18:23Z" finished-at="2019-09-08T04:18:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:login.LoginTest@59e5ddf]" name="login" duration-ms="978" started-at="2019-09-08T04:18:38Z" data-provider="LoginProvider" finished-at="2019-09-08T04:18:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:login.LoginTest@59e5ddf]" name="login" duration-ms="5794" started-at="2019-09-08T04:18:39Z" data-provider="LoginProvider" finished-at="2019-09-08T04:18:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@marvel.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:login.LoginTest@59e5ddf]" name="login" duration-ms="5106" started-at="2019-09-08T04:18:44Z" data-provider="LoginProvider" finished-at="2019-09-08T04:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[newguy@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="guestLogin()[pri:1, instance:login.LoginTest@59e5ddf]" name="guestLogin" duration-ms="2734" started-at="2019-09-08T04:18:50Z" finished-at="2019-09-08T04:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guestLogin -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:login.LoginTest@59e5ddf]" name="afterClass" is-config="true" duration-ms="197" started-at="2019-09-08T04:18:52Z" finished-at="2019-09-08T04:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- login.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="RegistrationTest" duration-ms="64073" started-at="2019-09-08T04:18:23Z" finished-at="2019-09-08T04:19:27Z">
+      <class name="registration.RegisterTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="beforeTest" is-config="true" duration-ms="14552" started-at="2019-09-08T04:18:23Z" finished-at="2019-09-08T04:18:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="4557" started-at="2019-09-08T04:18:38Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:18:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gmail@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="4053" started-at="2019-09-08T04:18:42Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:18:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="4079" started-at="2019-09-08T04:18:46Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gmail@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[pwd1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="3934" started-at="2019-09-08T04:18:50Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:18:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@@]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gmail@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="3934" started-at="2019-09-08T04:18:54Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:18:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gmail@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="3955" started-at="2019-09-08T04:18:58Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:19:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[thanos@marvel.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="4047" started-at="2019-09-08T04:19:02Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:19:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gmail@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[pwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:registration.RegisterTest@2173f6d9]" name="register" duration-ms="3977" started-at="2019-09-08T04:19:06Z" data-provider="RegistrationDataProvider" finished-at="2019-09-08T04:19:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tmail@email.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tran]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="userEditAcct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:registration.RegisterTest@2173f6d9]" name="userEditAcct" duration-ms="4212" started-at="2019-09-08T04:19:10Z" data-provider="LoginDataProvider" finished-at="2019-09-08T04:19:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tmail@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tran]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userEditAcct -->
+        <test-method status="PASS" signature="adminEditAcct(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:registration.RegisterTest@2173f6d9]" name="adminEditAcct" duration-ms="4900" started-at="2019-09-08T04:19:14Z" data-provider="LoginDataProvider" finished-at="2019-09-08T04:19:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tmail@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tran]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminEditAcct -->
+        <test-method status="PASS" signature="adminDeleteAcct(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:registration.RegisterTest@2173f6d9]" name="adminDeleteAcct" duration-ms="7765" started-at="2019-09-08T04:19:19Z" data-provider="LoginDataProvider" finished-at="2019-09-08T04:19:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testUser]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminDeleteAcct -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:registration.RegisterTest@2173f6d9]" name="afterClass" is-config="true" duration-ms="70" started-at="2019-09-08T04:19:27Z" finished-at="2019-09-08T04:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- registration.RegisterTest -->
+    </test> <!-- RegistrationTest -->
+  </suite> <!-- LoginRegistrationSuite -->
+</testng-results>
